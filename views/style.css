@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(179,17,233);
+background: linear-gradient(90deg, rgba(179,17,233,1) 7%, rgba(0,212,255,1) 75%);
+}
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 181px;
+}
+
+#go_back {
+    text-decoration: none;
+    position: absolute;
+    left: 87vh;
+    font-size: 1.5rem;
+    top: 33vh;
+    color: #0e0add;
+}
+#go_back :hover{
+    
+    color: red;
+}

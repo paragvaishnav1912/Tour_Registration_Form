@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e54d1c413a.js" crossorigin="anonymous"></script>
+        <title>Form validation</title>
+        <link rel="stylesheet" href="/static/stylish.css">
+    </head>
+
+    <body>
+
+        <form class="frm" id="frm" method="post" action="/welcome" onsubmit="return validator()">
+        <div class="head_title"> <p>COLLEGE TOUR REGISTRATION</p></div>
+            <span class="leb"><label id="lb" for="user">First Name:</label><label for="midd">Middle Name:</label><label for="last">Last Name:</label></span>
+            <span > <input class="names" id="fname" name="fname" type="text" placeholder="eg.Vaishnav">
+                <span id="emx" class="sps_2" ></span><input class="names"
+                 id="mname" name="mname" type="text" placeholder="eg.Ram"><span class="sps_2" ></span>
+                <input class="names" id="lname" name="lname" type="text" placeholder="eg.Dashratha"><span class="sps_2" ></span></span><br>
+                <span><p class="labels">**First Name is required</p><p class="labels">**Middle Name is required</p><p class="labels">**Last Name is required</p></span>
+            <label class="head" for="midd">Enrollment No:</label >
+            <input class="other" name="en_no" id="enroll" style="padding-left: 8px;" type="text" placeholder="eg.180010107060"><span class="sps_2"></span><br>
+            <p class="labels">**Enrollment Number is required</p>
+            <label class="head"  for="midd">Email I'd:</label>
+            <input class="other" name="Email" id="email" type="text" placeholder="eg.abc@this.com"><span class="sps_2" ></span><br>
+            <p class="labels">**Email Id is required</p>
+            <label class="head" for="midd">Mobile Number:</label>
+            <input class="other" name="phone" id="mobi" type="text" placeholder="eg.+91-1234506060"><span class="sps_2" ></span><br>
+            <p class="labels">**Please Enter your phone number</p>
+
+            <label class="head" for="midd">Gender:</label>
+            <input class="rad_grp" type="radio" name="gender" id="male" value="male"><label class="lb">Male</label>
+            <input type="radio" class="rad_grp" name="gender" id="female" value="female"><label class="lb">FeMale <span id="sp_case" class="sps_2" ></span></label><br>
+            <p class="labels">**Please select your gender</p>
+            <label class="head" for="midd">Address:</label>
+          <div class="txt"><textarea id="addr" name="addr" class="head" rows="4" cols="45"></textarea><span class="sps_2" ></span></div><br>
+            <p class="labels">**Please Provide your Postal Address</p>
+            <input type="submit" value="REGISTER" id="btn" >
+        </form>
+    </body>
+    <script src="/static/logic.js" type="text/javascript">
+    // var test = /^([a-zA-z0-9\.-]+)@([a-zA-z0-9-]+).([a-z]{2,20})$/;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
